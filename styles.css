@@ -81,12 +81,16 @@ nav img {
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-style: normal;
-      background-color: #03CD02;
+      
       block-size: auto;
     }
   }
   @media screen and (max-width: 700px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative;
+    background-color: #03CD02;}
+    .topnav.responsive img {
+      display: none;
+    }
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
