@@ -104,7 +104,7 @@ nav img {
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-style: normal;
-      block-size: auto;
+      width: auto;
     }
   }
   @media screen and (max-width: 700px) {
