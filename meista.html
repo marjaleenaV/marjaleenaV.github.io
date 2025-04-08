@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Tietoa meistä</title>
+</head>
+<body>
+    <header>
+      <nav class="poppins-regular topnav" id="myTopnav">
+        <img src="stepUp_logo.jpg" alt="yrityksen logo" id="logo">
+        <a href="yhteystiedot.html">Ota yhteyttä</a> 
+        <a href="palvelumme.html">Palvelumme</a>
+        <a href="meista.html" class="sivulla">Meistä</a>
+        <a href="index.html">Etusivu</a>   
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+    <h1>Keitä me olemme?</h1>
+    </header>
+      <main>
+        <p>
+
+        </p>
+    </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</body>
+</html>
