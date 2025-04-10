@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
     <title>Palvelumme</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="etusivu.html">Etusivu</a>
-            <a href="meista.html">Meistä</a>
+        <nav class="poppins-regular topnav" id="myTopnav">
+            <img src="stepUp_logo.jpg" alt="yrityksen logo" id="logo">
+            <a href="yhteystiedot.html">Ota yhteyttä</a> 
             <a href="palvelumme.html" class="sivulla">Palvelumme</a>
-            <a href="yhteystiedot.html">Ota yhteyttä</a>
+            <a href="meista.html">Meistä</a>
+            <a href="index.html">Etusivu</a>   
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
     </header>
-    <p>
-        
-    </p>
-    
+    <main class="poppins-regular">
+        <h1 class="poppins-bold">Huolettomuutta liiketoimintaasi tarjoamillamme palveluilla</h1>
+        <p>
+        Meiltä saat räätälöidyt palvelut henkilöstöhallintaan ja palkka-asioihin. Kaipaat sitten apua kerta-luontoisesti tai pidempää kumppanuutta, meidän kanssamme asiat hoituvat helposti ja luotettavasti. 
+        </p>
+        <p class="palvelu">HR-ratkaisut - Viekö HR liikaa aikaasi? Meiltä saat henkilöstöhallinnan palvelut juuri sen laajuisena kuin niitä kaipaat. Asiantuntijamme tuovat sujuvuutta rekrytointiin sekä työsuhteiden hallintaan ja huolehtivat työntekijöidesi hyvinvoinnista.</p>
+        <p class="palvelu">Palkkapalvelut – Kaipaatko sujuvuutta palkka-asioihin? Voit jättää meidän huoleksemme palkanlaskennan, verotuksen ja muiden lakisääteisten velvoitteiden täyttäminen ja keskity sinä liiketoimintasi kehittämiseen. Varmistamme kyllä, että palkat menevät maksuun ajallaan ja oikean suuruisina</p>
+        <p class="palvelu">HR-johtamisen ja kehittämisen tuki – Ideoita vailla? Meidän kauttamme saat myös tiimi- ja esimiesvalmennukset sekä henkilöstökehittämisvalmennukset, joiden avulla voit kehittää liiketoimintasi HR-strategiaa ja vahvistaa henkilöstösi motivaatiota</p>
+    </main>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>

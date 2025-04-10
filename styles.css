@@ -88,7 +88,17 @@ nav img {
     width: 50%;
     float: left;
   }
-  
+  .boksi {
+    border: #091216 1px solid;
+    border-radius: 30px;
+    padding:10px;
+    box-shadow: 5px 5px #01A6EA;
+  }
+  .palvelu {
+    border: #091216 1px solid;
+    border-radius: 30px;
+    box-shadow: #091216;
+  }
  
   @media screen and (max-width: 700px) {
     h1, p {

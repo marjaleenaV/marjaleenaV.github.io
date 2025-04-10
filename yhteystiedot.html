@@ -3,16 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
     <title>>Yhteystiedot</title>
 </head>
 <body>
     <header>
-    <nav>
-        <a href="etusivu.html">Etusivu</a>
-        <a href="meista.html">Meistä</a>
-        <a href="palvelumme.html">Palvelumme</a>
-        <a href="yhteystiedot.html" class="sivulla">Ota yhteyttä</a>
-    </nav>
+        <nav class="poppins-regular topnav" id="myTopnav">
+            <img src="stepUp_logo.jpg" alt="yrityksen logo" id="logo">
+            <a href="yhteystiedot.html" class="sivulla">Ota yhteyttä</a> 
+            <a href="palvelumme.html">Palvelumme</a>
+            <a href="meista.html">Meistä</a>
+            <a href="index.html">Etusivu</a>   
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </nav>
 </header>
+<main class="poppins-regular">
+    <h1 class="poppins-bold">Yhdessä kohti parempaa henkilöstöarkea</h1>
+    <p>Ota rohkeasti yhteyttä ja kerro, kuinka me voimme tukea sinua ja yritystäsi. Vastailemme mielellämme kaikkiin mieltäsi askarruttaviin kysymyksiin ja räätälöimme halutessasi juuri sinulle sopivan ratkaisun.</p>
+    <form>
+        <label>sähköpostiosoite:</label>
+        <br><input type="text" value="example@example.com">
+        <br><label>Viesti:</label>
+        <br><input type="text" value="Kirjoita viestisi tähän">
+        
+    </form>
+</main>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
