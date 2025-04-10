@@ -80,6 +80,15 @@ nav img {
   .sivulla {
     background-color: #03CD02;
   }
+  .osa1 {
+    width: 50%;
+    float:left;
+  }
+  .osa2 {
+    width: 50%;
+    float: left;
+  }
+  
  
   @media screen and (max-width: 700px) {
     h1, p {
