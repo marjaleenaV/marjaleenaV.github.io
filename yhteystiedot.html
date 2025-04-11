@@ -23,12 +23,14 @@
 <main class="poppins-regular osa3">
     <h1 class="poppins-bold">Yhdessä kohti parempaa henkilöstöarkea</h1>
     <p>Ota rohkeasti yhteyttä ja kerro, kuinka me voimme tukea sinua ja yritystäsi. Vastailemme mielellämme kaikkiin mieltäsi askarruttaviin kysymyksiin ja räätälöimme halutessasi juuri sinulle sopivan ratkaisun.</p>
-    <form>
-        <label>sähköpostiosoite:</label>
-        <br><input type="text" value="example@example.com" style="color: grey;" >
-        <br><label>Viesti:</label>
-        <br><input type="text" value="Kirjoita viestisi tähän" style="color: grey;" >
-        
+    <form action="https://formsubmit.co/marjaleena.veijalainen@gmail.com" method="POST" class="poppins-regular">
+      <label>Sähköposti:</label>
+      <br><input type="email" name="sahkoposti" required><br>
+    
+      <label>Viesti:</label>
+      <br><textarea name="viesti" required style="width: 70%"></textarea><br>
+    
+      <button type="submit" class="poppins-bold">Ota yhteyttä</button>
     </form>
 </main>
 <div class="poppins-regular osa4">
