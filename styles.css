@@ -128,6 +128,22 @@ nav img {
     text-align: center;
    
   }
+  .osa3 {
+    width: 50%;
+    float:left;
+  }
+  form {
+    padding-left: 20%;
+  }
+  input {
+    width: 70%;
+  }
+  .osa4 {
+    float:left;
+    width: 50%;
+    text-align: center;
+    margin-top:20px;
+  }
  
   @media screen and (max-width: 700px) {
     h1, p {
