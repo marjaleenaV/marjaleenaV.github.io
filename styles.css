@@ -83,21 +83,50 @@ nav img {
   .osa1 {
     width: 50%;
     float:left;
+    margin-top: 5%;
   }
   .osa2 {
     width: 50%;
     float: left;
+    margin-top: 2%;
+  }
+  button {
+    background-color: #03CD02;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
   }
   .boksi {
     border: #091216 1px solid;
     border-radius: 30px;
     padding:10px;
     box-shadow: 5px 5px #01A6EA;
+    margin: 10px;
+    width: 40%;
+    float: left;
+    text-align: center;  
+  }
+  .rivi1{
+    height: 150px;
+  }
+  .rivi2 {
+    height: 200px;
   }
   .palvelu {
     border: #091216 1px solid;
     border-radius: 30px;
     box-shadow: #091216;
+    float:left;
+    width: 30%;
+    margin:10px;
+    padding:10px;
+    box-shadow:4px 4px #01A6EA;
+    height: 200px;
+    
+  }
+  .pikalinkki {
+    text-align: center;
+   
   }
  
   @media screen and (max-width: 700px) {
