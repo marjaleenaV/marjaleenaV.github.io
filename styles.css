@@ -170,6 +170,15 @@ nav img {
       font-style: normal;
       width: auto;
     }
+    .osa1, .osa2, .osa3, .osa4 {
+      width: 100%;
+    }
+    .rivi1, .rivi2, .palvelu {
+      width: 80%;
+      margin-left: 10%;
+      height: auto;
+    }
+    
   }
   @media screen and (max-width: 700px) {
     .topnav.responsive {position: relative;
