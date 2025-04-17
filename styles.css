@@ -184,6 +184,8 @@ nav img {
   @media screen and (max-width: 700px) {
     .topnav.responsive {position: relative;
     background-color: #03CD02;
+    display: flex;
+    flex-direction: column-reverse;
     }
     .topnav.responsive img {
       display: none;
