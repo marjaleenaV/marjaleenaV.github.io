@@ -107,20 +107,20 @@ nav img {
     text-align: center;  
   }
   .rivi1{
-    height: 150px;
+    height: 160px;
   }
   .rivi2 {
-    height: 200px;
+    height: 245px;
   }
   .palvelu {
     border: #091216 1px solid;
     border-radius: 30px;
     float:left;
     width: 30%;
-    margin:10px;
+    margin:5px;
     padding:10px;
     box-shadow:4px 4px #01A6EA;
-    height: 200px;
+    height: 220px;
     
   }
   .pikalinkki {
@@ -144,7 +144,7 @@ nav img {
     margin-top:20px;
   }
  
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     h1, p {
       padding-left:0%;
       padding-right: 0%;
@@ -178,9 +178,8 @@ nav img {
       height: auto;
     }
     
-    
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;
     background-color: #03CD02;
     display: flex;
@@ -207,4 +206,29 @@ nav img {
       
     }
    
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .boksi {
+      width: 80%;
+      height: auto;
+    }
+    .osa1 p {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .palvelu {
+      width: 45%;
+      float: left;
+      height: 200px;
+    }
+    main div button{
+      margin-top:50px;
+    } 
+    osa3 p, h1 {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    iframe {
+      width: 80%;
+    }
   }
