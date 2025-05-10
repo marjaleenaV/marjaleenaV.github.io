@@ -173,8 +173,9 @@ nav img {
       width: 100%;
     }
     .rivi1, .rivi2, .palvelu {
-      width: 80%;
-      margin-left: 10%;
+      width: 90%;
+      margin-bottom: 5%;
+      margin-top: 0;
       height: auto;
     }
     
