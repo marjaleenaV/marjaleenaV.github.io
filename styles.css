@@ -121,8 +121,10 @@ nav img {
     padding:10px;
     box-shadow:4px 4px #01A6EA;
     height: 220px;
+
     
   }
+  
   .pikalinkki {
     text-align: center;
    
@@ -174,13 +176,15 @@ nav img {
     }
     .rivi1, .rivi2, .palvelu {
       width: 90%;
-      margin-bottom: 5%;
+      margin-bottom: 3%;
       margin-top: 0;
       height: auto;
+      margin-left: 3%;
     }
     iframe {
       width: 80%;
     }
+    
   }
   @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;
@@ -214,6 +218,7 @@ nav img {
     .boksi {
       width: 80%;
       height: auto;
+      
     }
     .osa1 p {
       padding-left: 5%;
