@@ -178,7 +178,9 @@ nav img {
       margin-top: 0;
       height: auto;
     }
-    
+    iframe {
+      width: 80%;
+    }
   }
   @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;
@@ -225,7 +227,7 @@ nav img {
     main div button{
       margin-top:50px;
     } 
-    osa3 p, h1 {
+    .osa3 p, h1 {
       padding-left: 5%;
       padding-right: 5%;
     }
