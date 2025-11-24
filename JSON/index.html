@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Etusivu</a>
+  <a href="digiCafe.html">Digi Cafe</a>
+  <a href="palaveri.html">Palaveri</a>
+  <a href="tyot.html">Työpaikat</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="vastaus" style="padding-left:16px">
+  
+</div>
+
+<script>
+    //haetaan JSON-muotoista dataa
+fetch('https://jaakkola.github.io/json/digitekniikat.json')
+
+// Muunnetaan vastaus JSON muotoon
+ .then(function (response) {
+return response.json();
+})
+
+// Käsitellään muunnettu (eli JSON muotoinen) vastaus
+.then(function (responseJson) {
+// Testataan onnistuuko json-luku
+// jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu
+kerro(responseJson);
+
+})
+
+// Jos tuli jokin virhe
+.catch(function (error) {
+document.getElementById("vastaus").innerHTML =
+"<p>Tietoa ei pystytä hakemaan</p>";
+})
+
+function kerro(data){
+    let teksti = "";
+    
+    teksti = "<h1>" + data.otsikko + "</h1>";
+    teksti += "<p>" + data.kuvaus + "</p>";
+    teksti += "<p><img src ='" + data.kuva + "' alt = 'kuva digicavesta'></p>";
+
+    teksti += "<h3>Opintojakso: " + data.opintojakso.nimi + " " + data.opintojakso.tunnus + " " + data.opintojakso.opintopisteet + " op</h3>";
+    
+    teksti = teksti + "<ul>";
+        //taulukon käsittely
+        for(var i = 0; i < data.sisalto.length; i++) {
+            teksti = teksti + "<li>" + data.sisalto[i] + "</li>";
+        }
+    teksti = teksti + "</ul>";
+
+    teksti += "<h3>Linkit</h3>";
+
+    teksti += "<ul>";
+        for(let i = 0; i < data.tekniikat.length; i++) {
+            teksti += "<li>" +data.tekniikat[i].aihe + " <a href='" +data.tekniikat[i].linkki + "' >" + data.tekniikat[i].linkki + "</a></li>";
+        }
+    teksti += "</ul>";
+
+ document.getElementById("vastaus").innerHTML= teksti;
+}
+
+//navipalkin käyttöliittymä
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

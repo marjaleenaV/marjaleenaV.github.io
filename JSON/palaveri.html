@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Etusivu</a>
+  <a href="digiCafe.html">Digi Cafe</a>
+  <a href="palaveri.html" class="active">Palaveri</a>
+  <a href="tyot.html">Työpaikat</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="palaveri" style="padding-left:16px"></div>
+
+<script>
+
+fetch('https://marjaleenav.github.io/JSON/palaveri.json')
+
+// Muunnetaan vastaus JSON muotoon
+ .then(function (response) {
+return response.json();
+})
+
+// Käsitellään muunnettu (eli JSON muotoinen) vastaus
+.then(function (responseJson) {
+// Testataan onnistuuko json-luku
+// jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu
+kerro(responseJson);
+
+})
+
+// Jos tuli jokin virhe
+.catch(function (error) {
+document.getElementById("palaveri").innerHTML =
+"<p>Tietoa ei pystytä hakemaan</p>";
+})
+
+function kerro(data) {
+  let teksti = "";
+
+  teksti = "<h2>" + data.aihe + "</h2>";
+  teksti +="<p>Osallistujamäärä: " + data.osallistujamaara + "</p>";
+
+  teksti += "<h3>Osallistujat:</h3>";
+ teksti += "<ul>";
+    for(let i = 0; i < data.nimet.length; i++) {
+      teksti += "<li>" + data.nimet[i].nimi + "</li>";
+    
+    }
+    teksti += "</ul>";
+
+    teksti += "<p> Paikka: " + data.paikka.osoite + ", " + data.paikka.postinro + ", " + data.paikka.kunta +"</p>";
+    teksti += "<p> Alkaa: " + data.aloitusaika + " Kesto: " + data.kesto + "</p>";
+  document.getElementById("palaveri").innerHTML = teksti;
+}
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Etusivu</a>
+  <a href="digiCafe.html" class="active">Digi Cafe</a>
+  <a href="palaveri.html">Palaveri</a>
+  <a href="tyot.html">Työpaikat</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="vastaus" style="padding-left:16px"></div>
+
+<script>
+fetch('https://marjaleenav.github.io/JSON/demo.json')
+
+.then(function (response) {
+return response.json();
+})
+// Käsitellään muunnettu (eli JSON muotoinen) vastaus
+.then(function (responseJson) {
+// Testataan onnistuuko json-luku
+// jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu
+
+kerro(responseJson);
+})
+// Jos tuli jokin virhe
+.catch(function (error) {
+document.getElementById("vastaus").innerHTML =
+"<p>Tietoa ei pystytä hakemaan</p>";
+})
+
+function kerro(data){
+  let teksti = "";
+
+  teksti = "<h1>" + data.yritys + "</h1>";
+  teksti += "<p>" + data.yhteystiedot.osoite + "</p>";
+  teksti += "<p>" + data.yhteystiedot.puhelin + "</p>";
+  teksti += "<p>" + data.yhteystiedot.email + "</p>";
+
+
+   teksti += "<h3>Tuotteet</h3>";
+
+    teksti = teksti + "<ul>";
+        //taulukon käsittely
+        for(var i = 0; i < data.tuotteet.length; i++) {
+            teksti = teksti + "<li>" + data.tuotteet[i] + "</li>";
+        }
+    teksti = teksti + "</ul>";
+
+    teksti += "<h3>Henkilökunta</h3>";
+
+    teksti += "<ul>";
+      for(let i = 0; i < data.henkilokunta.length; i++) {
+        teksti += "<li>" +data.henkilokunta[i].nimi + ", " + data.henkilokunta[i].titteli + "</li>";
+      }
+      teksti += "</ul>;"
+
+
+  document.getElementById("vastaus").innerHTML= teksti;
+}
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
