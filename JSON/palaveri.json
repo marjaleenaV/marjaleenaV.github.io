@@ -1,6 +1,6 @@
 {"aihe": "Pikkujoulu budjetin laadinta",
 "osallistujamaara": "4",
-"nimet":[{"nimi":"Tiina", "nimi":"Ritva", "nimi": "Raimo", "nimi":"Markku"}], 
+"nimet":[{"nimi":"Tiina"}, {"nimi":"Ritva"}, {"nimi": "Raimo"}, {"nimi":"Markku"}], 
 "paikka":{"osoite": "Vanha postikuja 2","postnro": "00600", "kunta": "Helsinki"},
 "aloitusaika": "14:00",
 "kesto":"2h"
