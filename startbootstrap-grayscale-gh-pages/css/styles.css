@@ -11141,6 +11141,7 @@ body {
   }
 }
 
+
 .about-section {
   padding-top: 3rem;
  /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);*/
@@ -11154,8 +11155,9 @@ body {
   padding: 3rem 0;
 }
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 1rem;
 }
+
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
@@ -11163,18 +11165,18 @@ body {
   }
 }
 .projects-section .project-text {
-  padding: 3rem;
+  padding: 1rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 1rem;
   }
 }
 
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../revontulet3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
