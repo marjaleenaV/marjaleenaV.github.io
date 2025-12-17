@@ -37,6 +37,7 @@
                     <li class="nav-item"><a class="nav-link" href="#tietoa">Tietoa revontulista</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tilanne">Tilanne nyt</a></li>
                     <li class="nav-item"><a class="nav-link" href="#videoita">Opi ja katso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#palaute">Anna palautetta</a></li>
                 </ul>
             </div>
         </div>
@@ -93,11 +94,14 @@
         <div class="container px-4 px-lg-5">
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7" >Revontulitilanne pohjoismaiden alueella:<div id="auroraMap"></div></div>
+                <div class="col-xl-8 col-lg-7">Revontulitilanne pohjoismaiden alueella:<div id="auroraMap"></div>
+                </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
                         <h4 class="text-black">Revontulitilanne nyt:</h4>
-                        <p class="text-black mb-0" id="data"></p><p class="mt-3 text-black-60">*Kp-arvo kertoo avaruussään voimakkuuden: suurempi arvo tarkoittaa parempaa mahdollisuutta nähdä revontulia.</p>
+                        <p class="text-black mb-0" id="data"></p>
+                        <p class="mt-3 text-black-60">*Kp-arvo kertoo avaruussään voimakkuuden: suurempi arvo tarkoittaa
+                            parempaa mahdollisuutta nähdä revontulia.</p>
                         <div class="legend mt-5">
                             <h5>Merkkien selitykset</h5>
                             <div><span class="color green"></span> Heikko (kp 3)</div>
@@ -108,29 +112,45 @@
                 </div>
             </div>
             <!-- Project One Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center " id="videoita">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+            <div class="row gx-3 mb-6 mb-lg-3 justify-content-center " id="videoita">
+                <div class="mb-3"><h2 class="text-black" >Katso kiehtovia videoita revontulien synnystä</h2></div>
+                <div class="col-lg-6 mb-4 h-100 mb-lg-0">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="project-text w-100 my-auto ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/Vbwx8R_k27U?si=LyR--iNiSpC2QVBe"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <iframe  src="https://www.youtube.com/embed/PgIKsuZ3RZU?si=rBCJt28FVCnBFWum" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
+                        <div class="project-text w-100 my-auto ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/PgIKsuZ3RZU?si=rBCJt28FVCnBFWum"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
+            <div class="row gx-3 justify-content-center">
+                <div class="col-lg-6 mb-4 h-100 mb-lg-">
                     <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Mountains</h4>
-                                <p class="mb-0 text-white-50">Another example of a project with its respective
-                                    description. These sections work well responsively as well!</p>
-                            </div>
+                        <div class="project-text w-100 my-auto ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/izYiDDt6d8s?si=gmIh0VEFTSZLrZt7"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-6 mb-4 h-100 mb-lg-">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="project-text w-100 my-auto ratio ratio-16x9">
+                            <iframe  src="https://www.youtube.com/embed/1MI3YDGgtN4?si=78VpLnKqsxpoWI_F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -138,12 +158,12 @@
         </div>
     </section>
     <!-- Signup-->
-    <section class="signup-section" id="historia">
+    <section class="signup-section" id="palaute">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                    <h2 class="text-white mb-5">Anna palautetta sivustosta</h2>
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
                     <!-- * * * * * * * * * * * * * * *-->
@@ -155,10 +175,11 @@
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" id="emailAddress" type="email"
-                                    placeholder="Enter email address..." aria-label="Enter email address..."
+                                    placeholder="Syötä sähköpostiosoiteesi..." aria-label="Enter email address..."
                                     data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton"
-                                    type="submit">Notify Me!</button></div>
+                                    <div class="mt-3 form-control"><textarea class="form-control" id="feedbackText" rows="5" placeholder="Kirjoita palautteesi tähän..." required></textarea></div>
+                            <div class="col mt-2"><button class="btn btn-primary disabled" id="submitButton"
+                                    type="submit">Lähetä</button></div>
                         </div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is
                             required.</div>
@@ -189,51 +210,9 @@
             </div>
         </div>
     </section>
-    <!-- Contact-->
-    <section class="contact-section bg-black">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">+1 (555) 902-8832</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </section>
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div>
+        <div class="container px-4 px-lg-5">Copyright &copy; Marja-Leena Veijalainen 2025</div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
