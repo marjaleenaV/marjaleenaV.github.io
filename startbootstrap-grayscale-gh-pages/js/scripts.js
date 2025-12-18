@@ -124,8 +124,8 @@ koordinaatit(responseJson);
 
   function koordinaatit(data2) {
     let teksti = "";
-    let aika= data2["Observation Time"];
-    teksti = "<p>Havannointi ajankohta: " + aika.substr(0, 10) + ", klo " + aika.substr(11, 18) + "</p>";
+    let aika= data2["Forecast Time"];
+    teksti = "<p>Ennuste ajankohta: " + aika.substr(0, 10) + ", klo " + aika.substr(11, 18) + "</p>";
     document.getElementById("aika").innerHTML= teksti;
     //arvojen tarkistus jsonista ja siirto taulukkoon
     for (let i = 0; i < data2.coordinates.length; i++) {
