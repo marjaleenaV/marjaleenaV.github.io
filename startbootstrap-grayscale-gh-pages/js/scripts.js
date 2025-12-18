@@ -100,18 +100,11 @@ kerro(resposeJson);
     document.getElementById("data").innerHTML=teksti;
   }
   
-  /*function koordinaatit(arvo) {
-    let teksti = "";
-    teksti = arvo ["Observation Time"];
-
-    document.getElementById("auroraMap").innerHTML=teksti;
-  }
-   */
-  // Kerrotaan mihin diviin kartta piirretään
+ 
 let map = L.map("auroraMap");
 
 // Mihin kohtaan maapalloa kartta katsoo
-map.setView([67, 20], 5); // Suomen ,lappi
+map.setView([67, 20], 4.5); // Suomen ,lappi
 
 // Lisätään karttapohja (OpenStreetMap)
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -130,7 +123,10 @@ koordinaatit(responseJson);
   })
 
   function koordinaatit(data2) {
-  
+    let teksti = "";
+    let aika= data2["Observation Time"];
+    teksti = "<p>Havannointi ajankohta: " + aika.substr(0, 10) + ", klo " + aika.substr(11, 18) + "</p>";
+    document.getElementById("aika").innerHTML= teksti;
     //arvojen tarkistus jsonista ja siirto taulukkoon
     for (let i = 0; i < data2.coordinates.length; i++) {
     const point = data2.coordinates[i];
@@ -149,6 +145,7 @@ koordinaatit(responseJson);
     else if (aurora <= 5) color = 'yellow';
     else color = 'red';
 
+    //Väripallojen piirto
    L.circleMarker([lat, lon], {
   radius: aurora * 2,
   color: color,
